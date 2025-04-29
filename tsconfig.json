@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "node", // Set this to 'node' for correct package resolution
+    "jsx": "react-jsx", // JSX support for React
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".", // Resolve files from the root directory
+    "paths": {
+      "@components/*": ["src/components/*"] // Example alias for components
+    },
+    "declaration": true,
+    "declarationDir": "dist/types", // Output types to a separate folder
+    "emitDeclarationOnly": false
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
